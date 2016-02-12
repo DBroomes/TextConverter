@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace Text_Converter
 {
@@ -20,15 +21,15 @@ namespace Text_Converter
             Application.Run(new Form1());
         }
 
-        /*
-        static string CapitalizeWord(string text)
+        
+        public static string CapitalizeWord(string value)
         {
-            var output = new StringBuilder();
-            //output.Insert()
-            tolower
-
+            //var output = new StringBuilder();
+            ////output.Insert()
+            //tolower
+            return CultureInfo.CurrentCulture.TextInfo.ToTitleCase(value);
         }
-        */
+       
     }
     
 

@@ -16,5 +16,14 @@ namespace Text_Converter
         {
             InitializeComponent();
         }
+
+        private void btnConvert_Click(object sender, EventArgs e)
+        {
+            if (txtInput.Text != null)
+            {
+                txtOutput.Text = Text_Converter.Program.CapitalizeWord(txtInput.Text);
+
+            }
+        }
     }
 }
